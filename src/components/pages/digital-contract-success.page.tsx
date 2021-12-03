@@ -1,11 +1,11 @@
 import { Button, Heading, InlineButton, MediumScreen, SmallScreen } from "..";
 
-import Employee from "../../assets/images/employee.svg";
-import Financial from "../../assets/images/financial.svg";
 import React from "react";
 import { RoutePaths } from "../../router";
 import { useNavigate } from "react-router-dom";
 
+const Employee = "/images/employee.svg";
+const Financial = "/images/financial.svg";
 const Image9 = "/images/bg-9.png";
 
 const DigitalContractSuccessPage = () => {
@@ -105,7 +105,7 @@ const DigitalContractSuccessPage = () => {
                           <div className="rounded-15 p-2  ">
                             <img
                               className="img-fluid ncash_bg-lightpink icons w-50"
-                              src={Financial}
+                              src={process.env.PUBLIC_URL + Financial}
                             />
                           </div>
                           <Button
@@ -134,7 +134,7 @@ const DigitalContractSuccessPage = () => {
                           <div className=" rounded-15 p-2 ">
                             <img
                               className="img-fluid ncash_bg-lightblue icons w-50"
-                              src={Employee}
+                              src={process.env.PUBLIC_URL + Employee}
                             />
                           </div>
                           <Button

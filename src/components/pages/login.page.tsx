@@ -95,7 +95,7 @@ const LoginDetailsPage = () => {
                     className="img-fluid"
                     width="791"
                     height="741"
-                    src={Image3}
+                    src={process.env.PUBLIC_URL + Image3}
                     alt="BG"
                   />
                 </div>

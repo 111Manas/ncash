@@ -33,7 +33,7 @@ const SelectServices = () => {
                   className="img-fluid"
                   width="791"
                   height="741"
-                  src={Image1}
+                  src={process.env.PUBLIC_URL + Image1}
                   alt="Mobile"
                 />
               </div>
@@ -72,7 +72,7 @@ const SelectServices = () => {
                             <div className=" rounded-15  mt-4">
                               <img
                                 className="img-fluid ncash_bg-lightpink"
-                                src={cardIcon}
+                                src={process.env.PUBLIC_URL + cardIcon}
                               />
                             </div>
                           </div>
@@ -102,7 +102,7 @@ const SelectServices = () => {
                             <div className=" rounded-15  mt-4">
                               <img
                                 className="img-fluid ncash_bg-lightblue "
-                                src={npsIcon}
+                                src={process.env.PUBLIC_URL + npsIcon}
                               />
                             </div>
                           </div>
@@ -132,7 +132,7 @@ const SelectServices = () => {
                             <div className=" rounded-15  mt-4">
                               <img
                                 className="img-fluid ncash_bg-lightpurple "
-                                src={serviceIcon}
+                                src={process.env.PUBLIC_URL + serviceIcon}
                               />
                             </div>
                           </div>
@@ -179,7 +179,7 @@ const SelectServices = () => {
                     className="img-fluid"
                     width="791"
                     height="741"
-                    src={Image1}
+                    src={process.env.PUBLIC_URL + Image1}
                     alt="BG"
                   />
                 </div>
@@ -194,7 +194,7 @@ const SelectServices = () => {
                         <div className=" rounded-15 mt-4">
                           <img
                             className="img-fluid icon w-100 ncash_bg-lightpink"
-                            src={cardIcon}
+                            src={process.env.PUBLIC_URL + cardIcon}
                           />
                         </div>
                       </div>
@@ -224,7 +224,7 @@ const SelectServices = () => {
                         <div className=" rounded-15  mt-4">
                           <img
                             className="img-fluid ncash_bg-lightblue"
-                            src={npsIcon}
+                            src={process.env.PUBLIC_URL + npsIcon}
                           />
                         </div>
                       </div>
@@ -254,7 +254,7 @@ const SelectServices = () => {
                         <div className="rounded-15  mt-4">
                           <img
                             className="img-fluid w-100 ncash_bg-lightpurple "
-                            src={serviceIcon}
+                            src={process.env.PUBLIC_URL + serviceIcon}
                           />
                         </div>
                       </div>

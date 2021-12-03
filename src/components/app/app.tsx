@@ -1,6 +1,6 @@
 import React from "react";
 import Image1 from "../../assets/images/bg-1.png";
-import Building from "../../assets/images/building.svg";
+const Building = "/images/building.svg";
 
 function App() {
   return (

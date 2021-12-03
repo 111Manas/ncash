@@ -1,8 +1,8 @@
-import building from "../assets/images/building.svg";
-import edit from "../assets/images/edit.svg";
-import mail from "../assets/images/mail.svg";
-import phone from "../assets/images/phone.svg";
-import user from "../assets/images/user.svg";
+const building = "/images/building.svg";
+const edit = "/images/edit.svg";
+const mail = "/images/mail.svg";
+const phone = "/images/phone.svg";
+const user = "/images/user.svg";
 
 export const images = {
   building,

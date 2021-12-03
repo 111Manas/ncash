@@ -1,11 +1,10 @@
 import DashboardSubHeader from "../dashboard-sub-header/sub-header";
 import SidebarMenu from "../sidebar-menu/sidebar-menu";
-import NcashLogo from "../../assets/images/icons/Brand-logo-white.svg";
-
 import "./dashboard-layout.scss";
 import React from "react";
 import BrandLogo from "../brand-logo/brand-logo";
 
+const NcashLogo = "images/icons/Brand-logo-white.svg";
 const DashboardLayout: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
@@ -15,7 +14,7 @@ const DashboardLayout: React.FC<{ children: React.ReactNode }> = ({
         <div className="row">
           <div className="col-lg-1 col-xl-1 col-xxl-1 primary-gradient">
             <BrandLogo
-              src={NcashLogo}
+              src={process.env.PUBLIC_URL + NcashLogo}
               width="55"
               height="82"
               classname=" my-4"

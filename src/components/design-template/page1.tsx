@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image1 from "../../../../public/images/bg-1.svg";
-import Building from "../../../../public/images/icons/building.svg";
+const Building = "/images/icons/building.svg";
 const Page1 = () => {
   return (
     <div>

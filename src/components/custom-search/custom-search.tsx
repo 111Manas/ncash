@@ -1,10 +1,15 @@
-import SearchIcon from "../../assets/images/icons/search.svg";
 import "./custom-search.scss";
+const SearchIcon = "/images/icons/search.svg";
 const CustomSearchBar = () => {
   return (
     <div id="custom-search">
       <button type="submit">
-        <img src={SearchIcon} alt="search icon" width="18" height="18" />
+        <img
+          src={process.env.PUBLIC_URL + SearchIcon}
+          alt="search icon"
+          width="18"
+          height="18"
+        />
       </button>{" "}
       <input type="search" placeholder="Search..." />
     </div>

@@ -123,7 +123,7 @@ const SignUpDetailsPage = () => {
                     className="img-fluid"
                     width="791"
                     height="741"
-                    src={Image2}
+                    src={process.env.PUBLIC_URL + Image2}
                     alt="BG"
                   />
                 </div>

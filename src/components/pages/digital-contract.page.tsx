@@ -3,8 +3,8 @@ import { InlineButton, BackButton, Button, InputGroup, SmallScreen } from "..";
 import React from "react";
 import { RoutePaths } from "../../router";
 import { useNavigate } from "react-router-dom";
-import User from "../../assets/images/user.svg";
 
+const User = "/images/user.svg";
 const Group = "/images/icons/group-1.svg";
 const Image1 = "/images/bg-1.png";
 
@@ -23,7 +23,7 @@ const DigitalContractPage = () => {
                 className="img-fluid"
                 width="948"
                 height="707"
-                src={Image1}
+                src={process.env.PUBLIC_URL + Image1}
                 alt="Mobile"
               />
             </div>
@@ -76,7 +76,7 @@ const DigitalContractPage = () => {
                                 <div className="col-md-2 col-lg-2 col-xl-2 col-xxl-2 bg-pink  ">
                                   <img
                                     className="img-fluid  ncash_imageBackgroundicon w-100 "
-                                    src={User}
+                                    src={process.env.PUBLIC_URL + User}
                                   />
                                 </div>
 
@@ -98,7 +98,7 @@ const DigitalContractPage = () => {
                                 <div className="col-md-2 col-lg-2 col-xl-2 col-xxl-2 bg-pink">
                                   <img
                                     className="img-fluid  ncash_imageBackgroundicon w-100 "
-                                    src={User}
+                                    src={process.env.PUBLIC_URL + User}
                                   />
                                 </div>
 
@@ -142,7 +142,7 @@ const DigitalContractPage = () => {
                                 <div className="col-md-2 col-lg-2   col-xl-2 col-xxl-2 bg-pink">
                                   <img
                                     className="img-fluid  ncash_imageBackgroundicon w-100 "
-                                    src={User}
+                                    src={process.env.PUBLIC_URL + User}
                                   />
                                 </div>
 
@@ -247,7 +247,7 @@ const DigitalContractPage = () => {
                           >
                             <img
                               className="img-fluid ncash_w-8 ms-1 me-4"
-                              src={Group}
+                              src={process.env.PUBLIC_URL + Group}
                             />
                             Select Directors
                           </Button>
@@ -265,7 +265,7 @@ const DigitalContractPage = () => {
                                   <div className=" rounded-15  mt-1">
                                     <img
                                       className="img-fluid  ncash_imageBackgroundicon w-100 "
-                                      src={User}
+                                      src={process.env.PUBLIC_URL + User}
                                     />
                                   </div>
                                 </div>
@@ -290,7 +290,7 @@ const DigitalContractPage = () => {
                                   <div className=" rounded-15  mt-1">
                                     <img
                                       className="img-fluid  ncash_imageBackgroundicon w-100 "
-                                      src={User}
+                                      src={process.env.PUBLIC_URL + User}
                                     />
                                   </div>
                                 </div>
@@ -337,7 +337,7 @@ const DigitalContractPage = () => {
                                   <div className=" rounded-15  mt-1">
                                     <img
                                       className="img-fluid  ncash_imageBackgroundicon w-100 "
-                                      src={User}
+                                      src={process.env.PUBLIC_URL + User}
                                     />
                                   </div>
                                 </div>
@@ -403,7 +403,10 @@ const DigitalContractPage = () => {
                                 />
                               </div>{" "}
                               <div className=" d-flex w-100 justify-content-end mb-3">
-                                <InlineButton text=" + Add More " />
+                                <InlineButton
+                                  color="primary"
+                                  text=" + Add More "
+                                />
                               </div>
                             </div>
                           </div>

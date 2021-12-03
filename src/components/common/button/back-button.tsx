@@ -1,7 +1,8 @@
-import ArrowLeft from "../../../assets/images/back.svg";
 import React from "react";
 import s from "./button.module.scss";
 import { useNavigate } from "react-router";
+
+const ArrowLeft = "/images/back.svg";
 
 interface Props {
   text: string;
@@ -14,7 +15,11 @@ const BackButton: React.FC<Props> = ({ text }) => {
   };
   return (
     <button className={s.backContainer} onClick={goBack}>
-      <img className="img-fluid arrowLeft" src={ArrowLeft} alt="Back" />
+      <img
+        className="img-fluid arrowLeft"
+        src={process.env.PUBLIC_URL + ArrowLeft}
+        alt="Back"
+      />
       <span>{text}</span>
     </button>
   );

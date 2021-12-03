@@ -1,8 +1,10 @@
 import React from "react";
 import s from "./button.module.scss";
+import classnames from "classnames";
 
 interface Props {
   text: string;
+  color?: "primary" | "secondary";
 }
 
 const InlineButton: React.FC<
@@ -11,12 +13,14 @@ const InlineButton: React.FC<
       React.ButtonHTMLAttributes<HTMLButtonElement>,
       HTMLButtonElement
     >
-> = ({ text, ...otherProps }) => {
+> = ({ text, color = "primary", ...otherProps }) => {
+  const className = classnames(s["inline-button"], {
+    [s["color-primary"]]: color === "primary",
+  });
   return (
-    <button {...otherProps} className={s["inline-button"]}>
+    <button {...otherProps} className={className}>
       {text}
     </button>
   );
 };
-
 export default InlineButton;

@@ -1,7 +1,6 @@
 import React from "react";
-
-import Image1 from "../../../../public/images/bg-1.svg";
-import Building from "../../../../public/images/icons/building.svg";
+import Image1 from "../../assets/images/bg-1.png";
+import Building from "../../assets/images/building.svg";
 
 function App() {
   return (

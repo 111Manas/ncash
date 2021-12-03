@@ -73,7 +73,7 @@ const LoginDetailsPage = () => {
                       Continue
                     </Button>
                   </div>
-                  <p className="fw-bolder text-secondary text-center mb-20 mt-1">
+                  <p className="fw-bolder text-secondary text-center mb-5 mt-1">
                     Not having an account!
                     <Link className="ncash_nav-link" to={RoutePaths.SignUp}>
                       Sign Up

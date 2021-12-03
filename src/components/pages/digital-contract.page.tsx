@@ -207,7 +207,10 @@ const DigitalContractPage = () => {
                             />
                           </div>
                           <div className=" d-flex w-100 justify-content-end">
-                            <InlineButton text=" + Add More " />
+                            <InlineButton
+                              className="primary"
+                              text=" + Add More "
+                            />
                           </div>
                         </div>
                       </div>
@@ -399,7 +402,7 @@ const DigitalContractPage = () => {
                                   aria-describedby="basic-addon1"
                                 />
                               </div>{" "}
-                              <div className=" d-flex w-100 justify-content-end">
+                              <div className=" d-flex w-100 justify-content-end mb-3">
                                 <InlineButton text=" + Add More " />
                               </div>
                             </div>

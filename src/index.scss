@@ -195,6 +195,14 @@ input.input-field::placeholder {
 .bg-grey {
   background-image: linear-gradient(#efefef, #f2ebff);
 }
+.inline-button {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+}
+.color-primary {
+  color: black;
+}
 
 /********accorion****/
 .accordion-button:focus {

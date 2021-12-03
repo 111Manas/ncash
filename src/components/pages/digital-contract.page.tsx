@@ -208,7 +208,7 @@ const DigitalContractPage = () => {
                           </div>
                           <div className=" d-flex w-100 justify-content-end">
                             <InlineButton
-                              className="primary"
+                              color="secondary"
                               text=" + Add More "
                             />
                           </div>
@@ -404,7 +404,7 @@ const DigitalContractPage = () => {
                               </div>{" "}
                               <div className=" d-flex w-100 justify-content-end mb-3">
                                 <InlineButton
-                                  color="primary"
+                                  color="secondary"
                                   text=" + Add More "
                                 />
                               </div>

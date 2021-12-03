@@ -16,7 +16,11 @@ const InlineButton: React.FC<
 > = ({ text, color = "primary", ...otherProps }) => {
   const className = classnames(s["inline-button"], {
     [s["color-primary"]]: color === "primary",
+    [s["color-secondary"]]: color === "secondary",
   });
+  // const className = classnames(s["inline-button"], {
+  //   [s["color-primary"]]: color === "primary",
+  // });
   return (
     <button {...otherProps} className={className}>
       {text}
